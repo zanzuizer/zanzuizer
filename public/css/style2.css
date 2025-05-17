@@ -1,0 +1,291 @@
+.nav-header .profile-element {
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+}
+
+.dropdown .clear {
+    padding-left: 5px;
+    font-size   : 15px;
+}
+
+.border-bottom .navbar-static-top {
+    border-bottom: 1px solid #e7eaec;
+    margin-bottom: 0;
+}
+
+.gray-bg .dashboard-header {
+    height    : 620px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.gray-bg .footer {
+    padding: 20px 0;
+}
+
+[data-tooltip] {
+    position: relative;
+    cursor  : pointer;
+}
+
+/* CSS cho tooltip */
+[data-tooltip]:hover::before {
+    content         : attr(data-tooltip);
+    position        : absolute;
+    bottom          : 100%;
+    left            : 50%;
+    transform       : translateX(-50%);
+    margin-bottom   : 10px;
+    padding         : 4px 8px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color           : white;
+    font-size       : 12px;
+    border-radius   : 4px;
+    white-space     : nowrap;
+    z-index         : 100;
+}
+
+[data-tooltip]:hover::after {
+    content      : '';
+    position     : absolute;
+    bottom       : 100%;
+    left         : 50%;
+    transform    : translateX(-50%);
+    margin-bottom: 2px;
+    border-width : 5px;
+    border-style : solid;
+    border-color : rgba(0, 0, 0, 0.8) transparent transparent transparent;
+    z-index      : 101;
+}
+
+
+/* Không cần CSS cho số thứ tự tự động nữa vì đã dùng JavaScript */
+/* .dataTables-phongkho tbody tr td:first-child {
+    text-align : center;
+    font-weight: 500;
+} */
+
+/* Thêm CSS cho số thứ tự */
+/* .dataTables-phongkho tbody tr:hover td:first-child {
+    background-color: #f0f8ff;
+    font-weight     : bold;
+} */
+
+/* CSS cho các nút phân trang với chữ màu xanh và nền xám
+.pagination>li>a,
+.pagination>li>span {
+    color           : #086df0;
+    background-color: #9c9595;
+    border          : none;
+    transition      : all 0.3s ease;
+}
+
+.pagination>li>a:hover,
+.pagination>li>span:hover,
+.pagination>li>a:focus,
+.pagination>li>span:focus {
+    color           : #1a73e8;
+    background-color: #e0e0e0;
+}
+
+.pagination>.active>a,
+.pagination>.active>span,
+.pagination>.active>a:hover,
+.pagination>.active>span:hover,
+.pagination>.active>a:focus,
+.pagination>.active>span:focus {
+    background-color: #e0e0e0;
+    color           : #1a73e8;
+    font-weight     : bold;
+}
+
+.pagination>.disabled>span,
+.pagination>.disabled>span:hover,
+.pagination>.disabled>span:focus,
+.pagination>.disabled>a,
+.pagination>.disabled>a:hover,
+.pagination>.disabled>a:focus {
+    color           : #aaa;
+    background-color: #f5f5f5;
+    cursor          : not-allowed;
+} */
+#editModalLabel,
+#addModalLabel {
+    font-size  : 20px;
+    font-weight: bold;
+    color      : rgb(114, 192, 248);
+}
+
+.row .control-label {
+    text-align: right;
+    font-size : 14px;
+    margin-top: 7px;
+}
+
+#deleteModalLabel {
+    font-size  : 20px;
+    font-weight: bold;
+    color      : rgb(240, 36, 36);
+}
+
+.modal-body p strong {
+    font-size: 16px;
+}
+
+/* CSS cho table */
+.my-ibox-title {
+    display        : flex;
+    justify-content: space-between;
+    align-items    : center;
+}
+
+.ibox-title {
+    padding: 10px 20px 10px 18px;
+
+}
+
+.ibox-content {
+    border-top: none;
+}
+
+.table-responsive {
+    overflow-x: hidden;
+}
+
+
+.text-center {
+    text-align: center;
+}
+
+@media screen and (max-width: 1535px) {
+
+    /* Các style áp dụng khi màn hình nhỏ hơn 1535px */
+    .table-responsive {
+        overflow-x: auto;
+    }
+}
+
+#phongSearch::placeholder {
+    color     : #999;
+    font-style: italic;
+}
+
+#phongSearch {
+    position: relative;
+    z-index : 1;
+}
+
+.form-group.autocomplete {
+    position: relative;
+}
+
+.form-group.autocomplete {
+    position: relative;
+}
+
+.ui-autocomplete {
+    max-height: 300px;
+    overflow-y: auto;
+    border    : 1px solid #d4d4d4;
+    background: white;
+    z-index   : 2147483647;
+    position  : absolute;
+}
+
+.ui-autocomplete .ui-menu-item:hover,
+.ui-autocomplete .ui-state-active {
+    color           : white;
+    font-weight     : bold;
+    font-size       : 17px;
+    background-color: #4e90bd;
+}
+
+
+@media (max-width: 767px) {
+    .room-map {
+        max-width : 100%;
+        overflow-x: auto;
+    }
+
+    #hasMap {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Other styles */
+.status_pc {
+    outline        : none;
+    border         : 0;
+    background     : #007bff;
+    color          : white;
+    border-radius  : 8px;
+    height         : 40px;
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    font-weight    : bold;
+    cursor         : pointer;
+    transition     : 0.3s;
+}
+
+
+/* CSS cho sơ đồ phòng máy */
+.room-map {
+    background-color: #ddd;
+    padding         : 20px;
+    border          : 2px solid #4d4d4d;
+    border-radius   : 5px;
+    max-width       : 900px;
+    margin          : auto;
+}
+
+.machine-grid {
+    display        : flex;
+    flex-wrap      : wrap;
+    justify-content: center;
+}
+
+.pc {
+    width           : calc(100% / 8 - 10px);
+    max-width       : 60px;
+    height          : 40px;
+    background-color: #337ab7;
+    color           : white;
+    line-height     : 60px;
+    margin          : 5px;
+    border-radius   : 6px;
+    text-align      : center;
+    font-weight     : bold;
+    outline         : none;
+    cursor          : pointer;
+    border          : none;
+    display         : flex;
+    align-items     : center;
+    justify-content : center;
+}
+
+.broken {
+    background-color: red;
+}
+
+/* Responsive: nhỏ hơn 900px → 6 máy/hàng */
+@media (max-width: 900px) {
+    .pc {
+        width: calc(100% / 6 - 10px);
+    }
+}
+
+/* Nhỏ hơn 700px → 4 máy/hàng */
+@media (max-width: 700px) {
+    .pc {
+        width: calc(100% / 4 - 10px);
+    }
+}
+
+/* Nhỏ hơn 500px → 3 máy/hàng */
+@media (max-width: 500px) {
+    .pc {
+        width: calc(100% / 3 - 10px);
+    }
+}
